@@ -7,7 +7,6 @@ A Java-based desktop application for managing banking transactions, featuring a 
 - User authentication with login and account creation
 - Account management (create savings/checking accounts, view balances)
 - Transaction processing (deposits and withdrawals with balance validation)
-- Transaction history display for the last 7 days
 - Customer deletion with cascading record removal
 - Responsive GUI with gradient styling, custom buttons, and clear error messages
 
@@ -111,17 +110,11 @@ Banking-Transaction-System/
 │   └── banking_system.sql
 ├── README.md
 ├── .gitignore
-└── LICENSE (optional)
 ```
-
-## Screenshots
-
-![Login Screen](screenshots/login.png)![Main Dashboard](screenshots/dashboard.png)\
-*Note: Add screenshots to a* `screenshots/` *folder and update paths if available.*
 
 ## Future Improvements
 
-- Implement password hashing (e.g., BCrypt) for secure storage
+- Implement password hashing for secure storage
 - Add fund transfer functionality between accounts
 - Introduce unit tests with JUnit
 - Enhance UI with themes or additional components
@@ -131,5 +124,4 @@ Banking-Transaction-System/
 ## Known Issues
 
 - Hardcoded database credentials should be replaced with environment variables in production
-- Hardcoded `branch_id` in `addAccount` method (future versions could add branch selection)
 - Original `Customer` table lacked `username`; fixed with `UNIQUE NOT NULL` constraint
